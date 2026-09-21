@@ -1,0 +1,9 @@
+# API Methods
+
+## getSearch
+
+
+
+## postRegister
+
+
