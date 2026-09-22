@@ -2,9 +2,13 @@
 
 ## getSearch
 **HTTP Method:** GET /api/search
+
 **What it does:** Searches the pages in the database for the word the user typed in.
+
 **Input:** Query parameters in the URL
+
   q: what the user is searching for
+  
   language: which language to search in. If it's left out, we use en
 
 **How it works:**
@@ -19,12 +23,18 @@
 
 ## postRegister
 **HTTP Method:** POST /api/register
+
 **What it does:** Creates a new user.
+
 **Input:** Form data (not JSON)
+
 username: required, and can't already be in use
+
 email: required, and has to have an @ in it
+
 password: required
-password2: optional, but if it's filled in it has to be the same as password. The old Python version checked this, so we kept it.
+
+password2: optional, but if it's filled in it has to be the same as password. The old Python version checked this, so we kept it
 
 **How it works:**
 1. We check the fields one at a time and stop at the first one that's wrong.
@@ -36,13 +46,19 @@ password2: optional, but if it's filled in it has to be the same as password. Th
 
 **Error responses:**
 400 Bad Request if something in the form is wrong. The message tells you what:
+
 "You have to enter a username"
+
 "You have to enter a valid email address"
+
 "You have to enter a password"
+
 "The two passwords do not match"
+
 "Username already taken"
 
 500 Internal Server Error if saving the user to the database fails. Plain text again.
+
 All of these errors are tested and works successfully.
 
 **Notes:** Right now the password is hashed with MD5, which isn't safe for passwords. But we're sticking to the legacy code for now, but plans on changing it to possibly BCrypt.
