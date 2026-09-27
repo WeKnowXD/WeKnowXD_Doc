@@ -63,3 +63,39 @@ All of these errors are tested and works successfully.
 
 **Notes:** Right now the password is hashed with MD5, which isn't safe for passwords. But we're sticking to the legacy code for now, but plans on changing it to possibly BCrypt.
 
+## apiWeather
+**HTTP Method:** GET /api/weather
+
+**What it does:** Returns the weather forecast for Copenhagen. It uses a saved copy if we fetched it less than 30 minutes ago, so we don't run out of calls on weatherapi.
+
+**Input:** None
+
+**How it works:**
+1. We lock weatherCacheMutex so only one request can use the cache at a time. This also means if a lot of requests come in when the cache is old, only the first one calls weatherapi.
+2. If we have no saved forecast, or it's older than 30 minutes, we call fetchWeather to get a new one and save it in weatherCache.
+3. If fetchWeather fails but we have an old forecast, we just keep using the old one. weatherCachedAt isn't updated so the next request tries again.
+4. We send the forecast wrapped in data.
+
+**Success response:** 200 OK with JSON like this:
+{ "data": { "location": { ... }, "current": { ... }, "forecast": { "forecastday": [ ... ] } } }
+
+**Error response:** 502 Bad Gateway if weatherapi fails and we have no old forecast to fall back on. The real reason is only written to the server log.
+{ "data": { "error": "Could not fetch the weather forecast right now" } }
+
+## fetchWeather
+**HTTP Method:** None, it's a helper used by apiWeather. It calls GET https://api.weatherapi.com/v1/forecast.json
+
+**What it does:** Gets the forecast from weatherapi and returns it as a Go map.
+
+**Input:** None. The API key is read from the WEATHER_API_KEY env variable, and the city and number of days are in the URL.
+
+**How it works:**
+1. We read the API key with os.Getenv and build the URL.
+2. We make the request with our own http.Client that has a 10 second timeout, since the normal http.Get could hang forever.
+3. If weatherapi answers with anything other than 200, like a bad key or out of calls, we return an error with the status code.
+4. We decode the JSON into a map and return it.
+
+**Success response:** Returns the forecast map and nil.
+
+**Error response:** Returns nil and an error if the request fails, times out, weatherapi returns a non 200 status, or the JSON can't be decoded.
+
