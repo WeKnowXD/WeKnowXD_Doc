@@ -18,7 +18,7 @@ The notes folder is for any class notes or relevant information we want/or have 
 The lessons learned folder is used for the team to both document and showcase, problems, mistakes
 and other things they have encountered, on their way to becoming more DevOps.
 
-## other
+## /Other
 
 The other folder is misc files and other things that doesn't fit in any current or future
 folder structure we may employ. And to avoid loss of data or previous work this has then been created. 
