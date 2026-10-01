@@ -1,7 +1,7 @@
 
 ## The Database Incident
 
-#### 28-09-2026:
+#### 28-09-2026
 
 During the night of September 28, we had finalized the last missing endpoints for **api/login**,  **api/weather** and **/weather**. and went to udate the server.
 
@@ -81,7 +81,7 @@ Meaning the team would catch the corrupted DB file quicker.
 
 2. The 401 Client error: Authentication
    
-The team could have caught the old users not persisting if health checks includes af variety of data.
+The team could have caught the old users not persisting if health checks includes a variety of data.
 
 3. The potential lost Data
 
