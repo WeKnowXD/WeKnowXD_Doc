@@ -1,24 +1,21 @@
-# WeKnowXD_Doc
-
-
 # General overview
 
-## project
+## /Project
 
 The project folder holds all the relevant documentation for the main project repo
 
-## to_do
+## /To_Do
 
-The to_do folder holds incompleted/unfinished documentation, that either needs revision,
+The to_do folder holds in completed/unfinished documentation, that either needs revision,
 updates, or other information before it can be moved to a more relevant folder.
 
-## notes
+## /Notes
 
 The notes folder is for any class notes or relevant information we want/or have written down
 
-## Leasons Learned
+## /Lessons Learned
 
-The leasons learned folder is used for the team to both document and showcase, problems, mistakes
+The lessons learned folder is used for the team to both document and showcase, problems, mistakes
 and other things they have encountered, on their way to becoming more DevOps.
 
 ## other
