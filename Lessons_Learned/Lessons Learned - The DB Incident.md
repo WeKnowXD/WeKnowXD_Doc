@@ -67,7 +67,7 @@ Here is the tl;dr of our errors.
 
 1. The team didn't health check the endpoints on the server on the 28th.
 2. The team didn't check the DB health on the 28th
-3. The team didn't update the DB on the 28th
+3. The team didn't update/use the correct DB on the 28th
 4. The team didn't update the DB on the 29th
 5. The team failed to use best practice for updating the DB on the 30th
 
