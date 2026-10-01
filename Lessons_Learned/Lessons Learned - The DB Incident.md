@@ -19,7 +19,7 @@ After completing this the team went to bed, as API calls tested locally on **loc
 
 The team is all signed up to Machine Learning, and there for had class tuesday at 12.30pm. Therefore it took us until at least **19:51** to disocver the new errors that was happening.
 
-![[team_discord.png]]
+![team_discord.png](https://github.com/WeKnowXD/WeKnowXD_Doc/blob/main/Lessons_Learned/team_discord.png)
 
 Seeing the error failure 500 immidiatley clued the issue in to be on the server. And the team memember who had discovered the errors went in to the server to find the cause.
 
