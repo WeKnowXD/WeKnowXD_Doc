@@ -8,6 +8,7 @@ Git Flow: We use a our own version of the gitflow strategy where we have the fol
 | develop | main          | main        | The development branch is used to integrate finished feature branches and acts as a buffer in front of main, to catch failures when combining multiple new features. |
 | feature | development   | development | Feature branches are used for developing new system features and testing them before integrating them into the development branch                                    |
 | fix     | development   | development | Fix branches are used when changes are to be made, but no know features are added.                                                                                   |
+
 **main branch releases and tag versioning**
 On our main branch we use github actions to automate release when merging from the development branches.
 
