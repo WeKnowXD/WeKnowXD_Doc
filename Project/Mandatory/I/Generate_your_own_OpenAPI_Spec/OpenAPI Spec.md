@@ -13,7 +13,7 @@ It as now seems that the default behavour to do when go is used.
 
 is to add these 3 lines into our json : data
 
-![[additionalProp.png]]
+![additionalProp.png](https://github.com/WeKnowXD/WeKnowXD_Doc/blob/main/Project/Mandatory/I/Generate_your_own_OpenAPI_Spec/additionalProp.png)
 
 now it seems you should be able to remove these but either that implementation requires handling with swaggo that we are too unfamiliar and lacking too much time to potentially fix after having looked for possibilities for most of the day.
 
