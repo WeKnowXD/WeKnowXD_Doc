@@ -66,7 +66,12 @@ There are no tests that are visible to us currently. Tests could help see if the
 
 The most obvious problems shows already on the root page. On every single page the footer is not stuck to the bottom of the page, and instead fixes itself to the nearest element in the top.
 
+![footer-probem.png](https://github.com/WeKnowXD/WeKnowXD_Doc/blob/main/Project/Mandatory/I/ProblemsWithCodebase/footer-probem.png)
+
 ## Buttons
 
 On both login and register the buttons are not centered with the boxes.
 Also we think the boxes are way too large in general, but this can be debated more, tho it is somethign we will look to fix in our own project.
+
+![sign-up-not-center.png](https://github.com/WeKnowXD/WeKnowXD_Doc/blob/main/Project/Mandatory/I/ProblemsWithCodebase/sign-up-not-center.png)
+![login-not-center.png](https://github.com/WeKnowXD/WeKnowXD_Doc/blob/main/Project/Mandatory/I/ProblemsWithCodebase/login-not-center.png)
