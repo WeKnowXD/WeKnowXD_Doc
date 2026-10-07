@@ -1,3 +1,5 @@
+# Problems we ran into
+
 
 We want to document that for our OpenAPI Spec we have encountered a slight deviation, that you can't seem to remove because of the base of swagger that swaggo utililizes.
 
@@ -16,6 +18,8 @@ is to add these 3 lines into our json : data
 ![additionalProp.png](https://github.com/WeKnowXD/WeKnowXD_Doc/blob/main/Project/Mandatory/I/Generate_your_own_OpenAPI_Spec/additionalProp.png)
 
 now it seems you should be able to remove these but either that implementation requires handling with swaggo that we are too unfamiliar and lacking too much time to potentially fix after having looked for possibilities for most of the day.
+
+# Our solution
 
 So as a group we decided to manually remove the belown seen addtionalProperoties both in the json and yaml on our generated files. With the note we are aware of this issue that we want to potentially fix in the future.
 
@@ -36,9 +40,9 @@ Besides that we have been succesfull with a 1:1 generation of the legacy servers
 
 			"additionalProperties": {} //<--- problematic line in .json we removed
 
-}
+		}
 
-}
+	}
 
 }
 ``` 
