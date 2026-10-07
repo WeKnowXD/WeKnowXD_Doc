@@ -60,7 +60,13 @@ There are no tests that are visible to us currently. Tests could help see if the
 *Line 188* `def logout():` instead of `api_logout` like all of the other api functions.
 
 
+# Problems with the Styling
 
+## Footer
 
+The most obvious problems shows already on the root page. On every single page the footer is not stuck to the bottom of the page, and instead fixes itself to the nearest element in the top.
 
+## Buttons
 
+On both login and register the buttons are not centered with the boxes.
+Also we think the boxes are way too large in general, but this can be debated more, tho it is somethign we will look to fix in our own project.
