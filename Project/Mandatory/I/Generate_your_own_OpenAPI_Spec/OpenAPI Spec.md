@@ -3,6 +3,8 @@
 
 We want to document that for our OpenAPI Spec we have encountered a slight deviation, that you can't seem to remove because of the base of swagger that swaggo utililizes.
 
+We chose to use swaggo to generate our spec.
+
 For our /api/weather we apply the following code:
 
 ```go
@@ -11,9 +13,7 @@ type WeatherResponse struct {
 }
 ```
 
-It as now seems that the default behavour to do when go is used.
-
-is to add these 3 lines into our json : data
+It as now seems that the default behavior when swaggo runs on map, is that it adds these 3 lines seen below.
 
 ![additionalProp.png](https://github.com/WeKnowXD/WeKnowXD_Doc/blob/main/Project/Mandatory/I/Generate_your_own_OpenAPI_Spec/additionalProp.png)
 
