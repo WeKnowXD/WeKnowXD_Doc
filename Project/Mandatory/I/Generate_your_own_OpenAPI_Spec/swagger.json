@@ -337,8 +337,7 @@
             "type": "object",
             "properties": {
                 "data": {
-                    "type": "object",
-                    "additionalProperties": {}
+                    "type": "object"
                 }
             }
         }
