@@ -38,7 +38,7 @@ Besides that we have been successful with a 1:1 generation of the legacy servers
 
 			"type": "object",
 
-			"additionalProperties": {} //<--- problematic line in .json we removed
+			"additionalProperties": {} <--- problematic line in .json we removed
 
 		}
 
