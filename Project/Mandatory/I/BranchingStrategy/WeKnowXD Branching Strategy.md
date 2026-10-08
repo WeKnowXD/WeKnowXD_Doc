@@ -45,7 +45,7 @@ We could Github flows but again the lack of a buffer would mean that we would ha
 
 | Pros                                                                                                        | Cons                                                                                                           |
 | ----------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
-| PR made it more clear group wide when changes were boing made to the code                                   | It does take a bit of extra time to both make and review PR from feature branch to dev, and from dev to main.  |
+| PR made it more clear group wide when changes were being made to the project                                   | It does take a bit of extra time to both make and review PR from feature branch to dev, and from dev to main.  |
 | We could be more confident about merging features into dev since we would always have main to fall back on. | With all the rules and layers we have chosen to follow it did take some time to get used to the flow of PR.    |
 | main mostly stayed stable at all times                                                                      | PR could be slow to be reviewed when most group members were unavailable or preoccupied.                       |
 |                                                                                                             | We did have some merge conflicts and when resolving them we accidentally removed other group members features. |
