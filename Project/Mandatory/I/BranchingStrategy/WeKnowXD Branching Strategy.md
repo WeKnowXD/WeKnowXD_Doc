@@ -1,6 +1,6 @@
 ## Strategy
 
-Git Flow: We use a our own version of the gitflow strategy where we have the following branches:
+Git Flow: We use a slightly altered version of the Gitflow strategy where we have the following branches:
 
 | Branch  | Parent branch | Merges into | Purpose                                                                                                                                                              |
 | ------- | ------------- | ----------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
